@@ -1,4 +1,4 @@
-package com.bcopstein;
+package br.com.bcopstein;
 
 public class CarroCustoDTO {
     private DataLocal inicioLocacao;

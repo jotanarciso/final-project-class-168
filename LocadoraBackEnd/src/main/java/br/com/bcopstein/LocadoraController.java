@@ -1,4 +1,4 @@
-package com.bcopstein;
+package br.com.bcopstein;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import io.swagger.annotations.Api;
 
 @RestController
 @RequestMapping("/locadora")
+@Api(tags = "Endpoint de Locação de Veículos")
+
 public class LocadoraController {
   private final List<Carro> carros;
 

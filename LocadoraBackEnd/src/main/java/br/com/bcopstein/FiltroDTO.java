@@ -1,5 +1,4 @@
-package com.bcopstein;
-
+package br.com.bcopstein;
 public class FiltroDTO {
     private DataLocal inicioLocacao = new DataLocal();
     private DataLocal fimLocacao = new DataLocal();
