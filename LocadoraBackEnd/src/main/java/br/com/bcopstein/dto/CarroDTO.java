@@ -1,12 +1,12 @@
 package br.com.bcopstein;
 
-public class CarroCustoDTO {
-    private DataLocal inicioLocacao;
-    private DataLocal fimLocacao;
+public class CarroDTO {
+    private DataLocalEntity inicioLocacao;
+    private DataLocalEntity fimLocacao;
     private String placa;
     private String marca;
     private String modelo;
-    private boolean arcondicionado;
+    private boolean arCondicionado;
     private boolean direcao;
     private boolean cambio;    
     private double custoLocacao;
@@ -14,15 +14,15 @@ public class CarroCustoDTO {
     private double desconto;
     private double totalPagar;
 
-    public CarroCustoDTO(DataLocal inicioLocacao, DataLocal fimLocacao, String placa, String marca, String modelo,
-            boolean arcondicionado, boolean direcao, boolean cambio, double custoLocacao, double seguro,
+    public CarroDTO(DataLocalEntity inicioLocacao, DataLocalEntity fimLocacao, String placa, String marca, String modelo,
+            boolean arCondicionado, boolean direcao, boolean cambio, double custoLocacao, double seguro,
             double desconto, double totalPagar) {
         this.inicioLocacao = inicioLocacao;
         this.fimLocacao = fimLocacao;
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
-        this.arcondicionado = arcondicionado;
+        this.arCondicionado = arCondicionado;
         this.direcao = direcao;
         this.cambio = cambio;
         this.custoLocacao = custoLocacao;
@@ -31,11 +31,11 @@ public class CarroCustoDTO {
         this.totalPagar = totalPagar;
     }
 
-    public DataLocal getInicioLocacao() {
+    public DataLocalEntity getInicioLocacao() {
         return inicioLocacao;
     }
 
-    public DataLocal getFimLocacao() {
+    public DataLocalEntity getFimLocacao() {
         return fimLocacao;
     }
 
@@ -51,8 +51,8 @@ public class CarroCustoDTO {
         return modelo;
     }
 
-    public boolean isArcondicionado() {
-        return arcondicionado;
+    public boolean isArCondicionado() {
+        return arCondicionado;
     }
 
     public boolean isDirecao() {
@@ -81,7 +81,7 @@ public class CarroCustoDTO {
 
     @Override
     public String toString() {
-        return "CarroCustoDTO [arcondicionado=" + arcondicionado + ", cambio=" + cambio + ", custoLocacao="
+        return "CarroDTO [arcondicionado=" + arCondicionado + ", cambio=" + cambio + ", custoLocacao="
                 + custoLocacao + ", desconto=" + desconto + ", direcao=" + direcao + ", fimLocacao=" + fimLocacao
                 + ", inicioLocacao=" + inicioLocacao + ", marca=" + marca + ", modelo=" + modelo + ", placa=" + placa
                 + ", seguro=" + seguro + ", totalPagar=" + totalPagar + "]";

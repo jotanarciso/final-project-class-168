@@ -2,7 +2,7 @@ package br.com.bcopstein;
 
 import java.util.Calendar;
 
-public class DataLocal {
+public class DataLocalEntity {
     private int dia = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
     private int mes = Calendar.getInstance().get(Calendar.MONTH) + 1;
     private int ano = Calendar.getInstance().get(Calendar.YEAR);

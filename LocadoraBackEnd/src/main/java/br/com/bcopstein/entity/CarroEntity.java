@@ -1,21 +1,21 @@
 package br.com.bcopstein;
 
-public class Carro {
+public class CarroEntity {
     private String placa;
     private String marca;
     private String modelo;
-    private boolean arcondicionado;
+    private boolean arCondicionado;
     private boolean direcao;
-    private boolean cambioautomatico;
+    private boolean cambioAutomatico;
 
-    public Carro(String placa, String marca, String modelo, boolean arcondicionado, boolean direcao,
-            boolean cambioautomatico) {
+    public CarroEntity(String placa, String marca, String modelo, boolean arCondicionado, boolean direcao,
+            boolean cambioAutomatico) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
-        this.arcondicionado = arcondicionado;
+        this.arCondicionado = arCondicionado;
         this.direcao = direcao;
-        this.cambioautomatico = cambioautomatico;
+        this.cambioAutomatico = cambioAutomatico;
     }
 
     public String getPlaca() {
@@ -30,21 +30,21 @@ public class Carro {
         return modelo;
     }
 
-    public boolean isArcondicionado() {
-        return arcondicionado;
+    public boolean isArCondicionado() {
+        return arCondicionado;
     }
 
     public boolean isDirecao() {
         return direcao;
     }
 
-    public boolean isCambioautomatico() {
-        return cambioautomatico;
+    public boolean isCambioAutomatico() {
+        return cambioAutomatico;
     }
 
     @Override
     public String toString() {
-        return "Carro [arcondicionado=" + arcondicionado + ", cambioautomatico=" + cambioautomatico + ", direcao="
+        return "Carro [arcondicionado=" + arCondicionado + ", cambioautomatico=" + cambioAutomatico + ", direcao="
                 + direcao + ", marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + "]";
-    } 
+    }
 }

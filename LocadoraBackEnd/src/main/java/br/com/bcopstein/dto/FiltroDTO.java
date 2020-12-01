@@ -1,38 +1,38 @@
 package br.com.bcopstein;
 public class FiltroDTO {
-    private DataLocal inicioLocacao = new DataLocal();
-    private DataLocal fimLocacao = new DataLocal();
-    private boolean arcondicionado = false;
+    private DataLocalEntity inicioLocacao = new DataLocalEntity();
+    private DataLocalEntity fimLocacao = new DataLocalEntity();
+    private boolean arCondicionado = false;
     private boolean direcao = false;
     private boolean cambio = false;
 
-    public FiltroDTO(DataLocal inicioLocacao, DataLocal fimLocacao, boolean arcondicionado, boolean direcao,
+    public FiltroDTO(DataLocalEntity inicioLocacao, DataLocalEntity fimLocacao, boolean arCondicionado, boolean direcao,
             boolean cambio) {
         this.inicioLocacao = inicioLocacao;
         this.fimLocacao = fimLocacao;
-        this.arcondicionado = arcondicionado;
+        this.arCondicionado = arCondicionado;
         this.direcao = direcao;
         this.cambio = cambio;
     }
 
-    public DataLocal getInicioLocacao() {
+    public DataLocalEntity getInicioLocacao() {
         return inicioLocacao;
     }
 
-    public void setInicioLocacao(DataLocal inicioLocacao) {
+    public void setInicioLocacao(DataLocalEntity inicioLocacao) {
         this.inicioLocacao = inicioLocacao;
     }
 
-    public DataLocal getFimLocacao() {
+    public DataLocalEntity getFimLocacao() {
         return fimLocacao;
     }
 
-    public void setFimLocacao(DataLocal fimLocacao) {
+    public void setFimLocacao(DataLocalEntity fimLocacao) {
         this.fimLocacao = fimLocacao;
     }
 
-    public boolean isArcondicionado() {
-        return arcondicionado;
+    public boolean isArCondicionado() {
+        return arCondicionado;
     }
 
     public boolean isDirecao(){
@@ -45,7 +45,7 @@ public class FiltroDTO {
 
     @Override
     public String toString() {
-        return "FiltroDTO [arcondicionado=" + arcondicionado + ", cambio=" + cambio + ", direcao=" + direcao
+        return "FiltroDTO [arCondicionado=" + arCondicionado + ", cambio=" + cambio + ", direcao=" + direcao
                 + ", fimLocacao=" + fimLocacao + ", inicioLocacao=" + inicioLocacao + "]";
     }
 }
