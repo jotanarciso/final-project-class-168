@@ -1,0 +1,8 @@
+header {
+  height: 80px;
+}
+
+.card {
+  width: 18rem;
+  max-height: 270px;
+}
