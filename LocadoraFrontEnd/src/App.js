@@ -4,6 +4,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import Card from "@components/Card";
+import Nav from "@components/Nav";
 function App() {
   const [diaInicial, setDiaInicial] = useState();
   const [mesInicial, setMesInicial] = useState();
@@ -68,10 +69,8 @@ function App() {
 
   return (
     <>
-      <header className="d-flex justify-content-center align-items-center">
-        <h1>Locadadora</h1>
-      </header>
-      <div className="container">
+      <Nav title="Locadora" />
+      <div className="container mt-3">
         <div className="row">
           <div className="col-3" id="menu">
             <h3>Locação</h3>
