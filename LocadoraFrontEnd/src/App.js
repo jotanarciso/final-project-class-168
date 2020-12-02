@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import swal from "sweetalert2";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -67,12 +67,17 @@ function App() {
     }
   }
 
+
+  useEffect(()=> {
+    handlePesquisarCarro()
+  }, [])
+
   return (
     <>
       <Nav title="Locadora" />
       <div className="container mt-3">
         <div className="row">
-          <div className="col-3" id="menu">
+          <div className="col-3 mb-2" id="menu">
             <h3>Locação</h3>
             <div className="mt-4">
               <h5>Início da Locação</h5>
@@ -173,7 +178,7 @@ function App() {
               Buscar
             </button>
           </div>
-          <div className="col-9 d-flex">
+          <div className="col-9 d-flex flex-wrap">
             {carros.length > 0 &&
               carros.map((carro, index) => (
                 <Card key={index} carro={carro}></Card>

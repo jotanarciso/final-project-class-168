@@ -1,4 +1,4 @@
-package br.com.bcopstein;
+package br.com.bcopstein.repository;
 
 import java.util.Collection;
 import java.util.function.Predicate;

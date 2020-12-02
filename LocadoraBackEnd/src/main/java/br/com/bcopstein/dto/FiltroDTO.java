@@ -1,51 +1,28 @@
-package br.com.bcopstein;
-public class FiltroDTO {
-    private DataLocalEntity inicioLocacao = new DataLocalEntity();
-    private DataLocalEntity fimLocacao = new DataLocalEntity();
-    private boolean arCondicionado = false;
-    private boolean direcao = false;
-    private boolean cambio = false;
+package br.com.bcopstein.dto;
 
-    public FiltroDTO(DataLocalEntity inicioLocacao, DataLocalEntity fimLocacao, boolean arCondicionado, boolean direcao,
-            boolean cambio) {
-        this.inicioLocacao = inicioLocacao;
-        this.fimLocacao = fimLocacao;
-        this.arCondicionado = arCondicionado;
-        this.direcao = direcao;
-        this.cambio = cambio;
-    }
+import br.com.bcopstein.entity.DataLocalEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
 
-    public DataLocalEntity getInicioLocacao() {
-        return inicioLocacao;
-    }
+@Data
+@Builder
+@ToString
+@AllArgsConstructor
+public class FiltroDto {
+	private DataLocalEntity inicioLocacao = new DataLocalEntity();
+	private DataLocalEntity fimLocacao = new DataLocalEntity();
+	private boolean arCondicionado = false;
+	private boolean direcao = false;
+	private boolean cambio = false;
 
-    public void setInicioLocacao(DataLocalEntity inicioLocacao) {
-        this.inicioLocacao = inicioLocacao;
-    }
-
-    public DataLocalEntity getFimLocacao() {
-        return fimLocacao;
-    }
-
-    public void setFimLocacao(DataLocalEntity fimLocacao) {
-        this.fimLocacao = fimLocacao;
-    }
-
-    public boolean isArCondicionado() {
-        return arCondicionado;
-    }
-
-    public boolean isDirecao(){
-        return direcao;
-    }
-
-    public boolean isCambio() {
-        return cambio;
-    }
-
-    @Override
-    public String toString() {
-        return "FiltroDTO [arCondicionado=" + arCondicionado + ", cambio=" + cambio + ", direcao=" + direcao
-                + ", fimLocacao=" + fimLocacao + ", inicioLocacao=" + inicioLocacao + "]";
-    }
+//    public FiltroDto(DataLocalEntity inicioLocacao, DataLocalEntity fimLocacao, boolean arCondicionado, boolean direcao,
+//            boolean cambio) {
+//        this.inicioLocacao = inicioLocacao;
+//        this.fimLocacao = fimLocacao;
+//        this.arCondicionado = arCondicionado;
+//        this.direcao = direcao;
+//        this.cambio = cambio;
+//    }
 }

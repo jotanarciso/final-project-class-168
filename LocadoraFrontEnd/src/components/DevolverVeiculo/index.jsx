@@ -12,7 +12,7 @@ function DevolverVeiculo() {
   const handleDevolverVeiculo = () => {
     try {
       axios
-        .post(`http://localhost:8080/locadora/devolverVeiculo`, { placa })
+        .post(`http://localhost:8080/locadora/devolverVeiculo`, {placa})
         .then((res) => {
           if (res.status === 200) {
             swal.fire(
@@ -20,6 +20,7 @@ function DevolverVeiculo() {
               "Devolu\u00E7\u00E3o bem-sucedida!",
               "success"
             );
+            window.location.reload();
           } else {
             swal.fire(
               "Erro",

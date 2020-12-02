@@ -7,7 +7,7 @@ function Card(props) {
   function handleAlugarCarro() {
     try {
       axios
-        .post(`http://localhost:8080/locadora/confirmaLocacao`, { carro })
+        .post(`http://localhost:8080/locadora/confirmaLocacao`, carro )
         .then((res) => {
           if (res.status === 200) {
             let conteudo = res.data;
